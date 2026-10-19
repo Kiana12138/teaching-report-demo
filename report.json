@@ -89,7 +89,7 @@
         "items": [
           {
             "kind": "image",
-            "imageSrc": "/assets/builtin-monotonicity-cover-eeb50c4eaf318d1d.png",
+            "imageSrc": "/assets/builtin-monotonicity-cover-demo-7e12335ef55b276b.webp",
             "imageAlt": "函数的单调性课题封面",
             "role": "context",
             "sourceType": "ppt",
@@ -122,7 +122,7 @@
                     "id": "ev_builtin_monotonicity_definition",
                     "kind": "video",
                     "videoSrc": "/assets/builtin-monotonicity-definition-node-4cb69b089eb40e52.mp4",
-                    "posterSrc": "/assets/builtin-monotonicity-definition-node-6066404c5daf6072.jpg",
+                    "posterSrc": "/assets/builtin-monotonicity-definition-node-demo-573feb127d2a93e7.webp",
                     "mediaSha256": "4cb69b089eb40e52d08683ba0af1c8a5e013ee3ee5beb48b84a854695b92a01f",
                     "startMs": 238000,
                     "endMs": 254200,
@@ -173,7 +173,7 @@
                     "id": "ev_builtin_monotonicity_definition",
                     "kind": "video",
                     "videoSrc": "/assets/builtin-monotonicity-definition-node-4cb69b089eb40e52.mp4",
-                    "posterSrc": "/assets/builtin-monotonicity-definition-node-6066404c5daf6072.jpg",
+                    "posterSrc": "/assets/builtin-monotonicity-definition-node-demo-573feb127d2a93e7.webp",
                     "mediaSha256": "4cb69b089eb40e52d08683ba0af1c8a5e013ee3ee5beb48b84a854695b92a01f",
                     "startMs": 238000,
                     "endMs": 254200,
@@ -222,7 +222,7 @@
                 "hideHeader": true,
                 "chip": "当前显示：问题2 原因分析",
                 "caption": "板书问题原因分析",
-                "imageSrc": "/assets/blackboard-analysis-bc77441abfe428e9.png",
+                "imageSrc": "/assets/blackboard-analysis-demo-1499460b9e9d7570.webp",
                 "imageAlt": "板书分析截图"
               }
             }
@@ -246,7 +246,7 @@
                 "hideHeader": true,
                 "chip": "当前显示：问题2 修改建议",
                 "caption": "板书问题修改建议",
-                "imageSrc": "/assets/blackboard-analysis-bc77441abfe428e9.png",
+                "imageSrc": "/assets/blackboard-analysis-demo-1499460b9e9d7570.webp",
                 "imageAlt": "板书分析截图"
               }
             }
@@ -270,7 +270,7 @@
                 "hideHeader": true,
                 "chip": "当前显示：问题3 原因分析",
                 "caption": "跳水视频情境导入课上PPT截图",
-                "imageSrc": "/assets/diving-d590adbb6549515c.png",
+                "imageSrc": "/assets/diving-demo-e3223d7405133cdc.webp",
                 "imageAlt": "跳水视频情境导入课上PPT截图",
                 "sourceType": "ppt",
                 "capturedAtMs": 28000
@@ -296,7 +296,7 @@
                 "hideHeader": true,
                 "chip": "当前显示：问题3 修改建议",
                 "caption": "跳水情境修改建议对应截图",
-                "imageSrc": "/assets/diving2-e4d53de2a10a1c07.png",
+                "imageSrc": "/assets/diving2-demo-139a7f8302749ae9.webp",
                 "imageAlt": "跳水情境修改建议对应截图",
                 "sourceType": "ppt",
                 "capturedAtMs": 58000
@@ -321,7 +321,7 @@
                 "hideHeader": true,
                 "chip": "当前显示：问题4 原因分析",
                 "caption": "两组材料对应课上PPT截图",
-                "imageSrc": "/assets/materials-582b585afa5a8674.png",
+                "imageSrc": "/assets/materials-demo-051ec7fb0bc922d5.webp",
                 "imageAlt": "两组材料课上PPT截图",
                 "sourceType": "ppt",
                 "capturedAtMs": 170000
@@ -347,7 +347,7 @@
                 "hideHeader": true,
                 "chip": "当前显示：问题4 修改建议",
                 "caption": "两组材料对应课上PPT截图",
-                "imageSrc": "/assets/materials-582b585afa5a8674.png",
+                "imageSrc": "/assets/materials-demo-051ec7fb0bc922d5.webp",
                 "imageAlt": "两组材料课上PPT截图",
                 "sourceType": "ppt",
                 "capturedAtMs": 170000
@@ -376,7 +376,7 @@
                     "id": "ev_builtin_monotonicity_questioning",
                     "kind": "video",
                     "videoSrc": "/assets/builtin-monotonicity-questioning-node-ece4de1e58d3d383.mp4",
-                    "posterSrc": "/assets/builtin-monotonicity-questioning-node-3f9787d344d017a2.jpg",
+                    "posterSrc": "/assets/builtin-monotonicity-questioning-node-demo-5aa2d563c9b254e2.webp",
                     "mediaSha256": "ece4de1e58d3d3836362e65de2980594efe9cc739d206c9bb7d9f8d4cae9aed6",
                     "startMs": 89000,
                     "endMs": 108300,
@@ -428,7 +428,7 @@
                     "id": "ev_builtin_monotonicity_questioning",
                     "kind": "video",
                     "videoSrc": "/assets/builtin-monotonicity-questioning-node-ece4de1e58d3d383.mp4",
-                    "posterSrc": "/assets/builtin-monotonicity-questioning-node-3f9787d344d017a2.jpg",
+                    "posterSrc": "/assets/builtin-monotonicity-questioning-node-demo-5aa2d563c9b254e2.webp",
                     "mediaSha256": "ece4de1e58d3d3836362e65de2980594efe9cc739d206c9bb7d9f8d4cae9aed6",
                     "startMs": 89000,
                     "endMs": 108300,
@@ -481,7 +481,7 @@
                   "imageAlt": "头部朝向动态"
                 },
                 "distribution": {
-                  "imageSrc": "/assets/head-orientation-right-a9d78bfdcdf5053b.jpg",
+                  "imageSrc": "/assets/head-orientation-right-demo-860440e3a38332e5.webp",
                   "imageAlt": "关注分布热力图"
                 }
               }
@@ -509,7 +509,7 @@
                   "imageAlt": "头部朝向动态"
                 },
                 "distribution": {
-                  "imageSrc": "/assets/head-orientation-right-a9d78bfdcdf5053b.jpg",
+                  "imageSrc": "/assets/head-orientation-right-demo-860440e3a38332e5.webp",
                   "imageAlt": "关注分布热力图"
                 }
               }
@@ -535,5 +535,5 @@
       }
     }
   },
-  "version": "static-606381e7e0a68b72"
+  "version": "static-941b9c5ddbca8177"
 }

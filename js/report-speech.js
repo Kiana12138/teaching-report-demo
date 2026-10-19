@@ -1,4 +1,4 @@
-import { mathToSpeech } from './tts.js?v=a19010ccf9e1fa1c';
+import { mathToSpeech } from './tts.js?v=fad89be6c91194c4';
 
 export const speechRulesVersion = '20261019-v1';
 

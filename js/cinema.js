@@ -1,13 +1,13 @@
-import { renderEvidenceCollection, bindEvidencePlayers, pauseEvidenceVideos, playEvidenceVideo, mediaURL, evidenceCaption } from "./evidence-player.js?v=a19010ccf9e1fa1c";
-import { buildCinemaSlides } from "./cinema-model.js?v=a19010ccf9e1fa1c";
-import { renderMarkdown } from "./markdown.js?v=a19010ccf9e1fa1c";
-import { reportPageKey, reportSpeechText } from "./report-speech.js?v=a19010ccf9e1fa1c";
+import { renderEvidenceCollection, bindEvidencePlayers, pauseEvidenceVideos, playEvidenceVideo, mediaURL, evidenceCaption } from "./evidence-player.js?v=fad89be6c91194c4";
+import { buildCinemaSlides } from "./cinema-model.js?v=fad89be6c91194c4";
+import { renderMarkdown } from "./markdown.js?v=fad89be6c91194c4";
+import { reportPageKey, reportSpeechText } from "./report-speech.js?v=fad89be6c91194c4";
 
 const staticMode = document.documentElement.dataset.reportMode === "static";
 const staticBase = new URL("./", document.baseURI);
-const { ReportTTSPlayer } = await import(staticMode ? "./static-tts-player.js?v=a19010ccf9e1fa1c" : "./tts-player.js?v=a19010ccf9e1fa1c");
+const { ReportTTSPlayer } = await import(staticMode ? "./static-tts-player.js?v=fad89be6c91194c4" : "./tts-player.js?v=fad89be6c91194c4");
 async function buildBuiltinExample() {
-  return (await import("./builtin-example.js?v=a19010ccf9e1fa1c")).buildBuiltinExample();
+  return (await import("./builtin-example.js?v=fad89be6c91194c4")).buildBuiltinExample();
 }
 
 const $ = (selector) => document.querySelector(selector);

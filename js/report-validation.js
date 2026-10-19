@@ -1,5 +1,5 @@
-import { createMathParser, isMathToken, mathOptions } from './math-parser.js?v=a19010ccf9e1fa1c';
-import katex from '../vendor/katex/katex.mjs?v=a19010ccf9e1fa1c';
+import { createMathParser, isMathToken, mathOptions } from './math-parser.js?v=fad89be6c91194c4';
+import katex from '../vendor/katex/katex.mjs?v=fad89be6c91194c4';
 
 // Repairs change wrappers only, never the mathematical body. Fenced/indented
 // code is protected using Markdown token ranges rather than global substitution.
