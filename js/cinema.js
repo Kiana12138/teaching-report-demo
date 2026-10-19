@@ -1,13 +1,13 @@
-import { renderEvidenceCollection, bindEvidencePlayers, pauseEvidenceVideos, playEvidenceVideo, mediaURL, evidenceCaption } from "./evidence-player.js?v=20b28f8f57cc6712";
-import { buildCinemaSlides } from "./cinema-model.js?v=20b28f8f57cc6712";
-import { renderMarkdown } from "./markdown.js?v=20b28f8f57cc6712";
-import { reportPageKey, reportSpeechText } from "./report-speech.js?v=20b28f8f57cc6712";
+import { renderEvidenceCollection, bindEvidencePlayers, pauseEvidenceVideos, playEvidenceVideo, mediaURL, evidenceCaption } from "./evidence-player.js?v=a19010ccf9e1fa1c";
+import { buildCinemaSlides } from "./cinema-model.js?v=a19010ccf9e1fa1c";
+import { renderMarkdown } from "./markdown.js?v=a19010ccf9e1fa1c";
+import { reportPageKey, reportSpeechText } from "./report-speech.js?v=a19010ccf9e1fa1c";
 
 const staticMode = document.documentElement.dataset.reportMode === "static";
 const staticBase = new URL("./", document.baseURI);
-const { ReportTTSPlayer } = await import(staticMode ? "./static-tts-player.js?v=20b28f8f57cc6712" : "./tts-player.js?v=20b28f8f57cc6712");
+const { ReportTTSPlayer } = await import(staticMode ? "./static-tts-player.js?v=a19010ccf9e1fa1c" : "./tts-player.js?v=a19010ccf9e1fa1c");
 async function buildBuiltinExample() {
-  return (await import("./builtin-example.js?v=20b28f8f57cc6712")).buildBuiltinExample();
+  return (await import("./builtin-example.js?v=a19010ccf9e1fa1c")).buildBuiltinExample();
 }
 
 const $ = (selector) => document.querySelector(selector);

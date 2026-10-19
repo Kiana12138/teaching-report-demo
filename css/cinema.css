@@ -31,6 +31,7 @@
     --sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     --mono: "SF Mono", "JetBrains Mono", ui-monospace, "Menlo", monospace;
     --ease: cubic-bezier(.22, 1, .36, 1);
+    --report-nav-width: 244px;
   }
   /* ———— 主题 2：纯白（白页面 + 灰胶片带 + 暖橙强调） ———— */
   html[data-theme="white"] {
@@ -144,7 +145,7 @@
 
   /* ———— 左侧导航（三段式：1 概览 ｜ 2 问题分析 ｜ 3 总结） ———— */
   .sidenav {
-    flex: none; width: 244px; min-height: 0; display: flex; flex-direction: column;
+    flex: none; width: var(--report-nav-width); min-height: 0; display: flex; flex-direction: column;
     background: var(--bg-deep); border-right: 1px solid var(--line); padding: 16px 12px 14px 16px;
   }
   .side-cap { font-family: var(--mono); font-size: 9.5px; letter-spacing: .2em; color: var(--edge-ink); margin: 0 0 12px 8px; }
@@ -314,10 +315,11 @@
   /* ———— 底部控制栏（固定高度，内含胶片条进度） ———— */
   .deck {
     height: 92px; flex: none; z-index: 40;
-    display: flex; align-items: center; gap: 20px; padding: 0 24px;
+    display: grid; grid-template-columns: var(--report-nav-width) minmax(0, 1fr) auto;
+    align-items: center; gap: 20px; padding: 0 24px 0 0;
     background: var(--bg-deep); border-top: 1px solid var(--line);
   }
-  .deck .strip { flex: 0 1 820px; min-width: 0; background: var(--film); border: 1px solid var(--edge-line); border-radius: 5px; padding: 0 10px; }
+  .deck .strip { width: 100%; max-width: 820px; min-width: 0; justify-self: center; background: var(--film); border: 1px solid var(--edge-line); border-radius: 5px; padding: 0 10px; }
   .deck .strip .perf { height: 10px; position: relative; }
   .deck .strip .perf::before {
     content: ""; position: absolute; left: 2px; right: 2px; top: 3px; height: 5px; border-radius: 1px;
@@ -326,11 +328,11 @@
   .deck .strip .cells { display: flex; gap: 7px; padding: 4px 0; }
   .deck .slide-label {
     font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em;
-    flex: 1 1 0; min-width: 0;
+    min-width: 0; padding: 0 24px;
     color: var(--amber); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .deck .slide-label i { font-style: normal; color: var(--muted); }
-  .deck-right { flex: 1 1 0; display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
+  .deck-right { display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
   .deck .counter { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--muted); white-space: nowrap; }
   .deck .counter b { color: var(--amber); font-weight: 700; }
   .deck .pbtn {
@@ -434,7 +436,7 @@
     .cam { width: 170px; }
     .slide { padding: 34px 28px 28px; }
     .scene { grid-template-columns: 1fr; gap: 24px; align-items: start; overflow-y: auto; }
-    .deck { padding: 0 18px; gap: 14px; }
+    .deck { grid-template-columns: minmax(0, 1fr) auto; padding: 0 18px; gap: 14px; }
     .deck .slide-label { display: none; }
     .film-edge { padding: 0 16px; }
     .film-edge.top .edge-txt:last-child { display: none; }
@@ -472,9 +474,10 @@
   .brand-short { display: none; }
 
   @media (min-width: 801px) and (max-width: 1100px) {
+    :root { --report-nav-width: 186px; }
     .topbar { padding: 0 14px; }
     .top-meta { display: flex; gap: 5px; }
-    .sidenav { display: flex; width: 186px; padding: 12px 7px; }
+    .sidenav { display: flex; padding: 12px 7px; }
     .cam { width: 150px; }
     .brand-name { font-size: 16px; }
     .ctl { padding: 0 8px; }
@@ -483,7 +486,8 @@
     .scene-txt-wrap { height: 100%; }
     .film .frame { height: clamp(90px, calc(100dvh - 374px), 340px); }
     .intertitle { height: clamp(160px, calc(100dvh - 285px), 424px); }
-    .deck .slide-label { display: block; }
+    .deck { grid-template-columns: var(--report-nav-width) minmax(0, 1fr) auto; padding-left: 0; }
+    .deck .slide-label { display: block; padding: 0 18px; }
   }
   @media (max-width: 800px) {
     .topbar { padding: 0 10px; }
@@ -501,6 +505,7 @@
     .intertitle { height: 220px; }
     .intertitle .inner { padding: 12px; }
     .deck { padding: 0 8px; gap: 6px; }
+    .deck-right { gap: 10px; }
     .deck .strip .frw .tip { max-width: min(280px, 85vw); }
   }
   @media (max-width: 600px) {

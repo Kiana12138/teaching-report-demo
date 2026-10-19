@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "buildId": "20b28f8f57cc6712",
+  "buildId": "a19010ccf9e1fa1c",
   "reportSha256": "775cc366e17c106d4af345b31cafffbcb4f9829802dc5fcb883e814cdf1ace13",
   "speechRulesVersion": "20261019-v1",
   "audioReady": true,
@@ -23,7 +23,7 @@
   "mediaFiles": 11,
   "audioFiles": 14,
   "audioDurationMs": 603336,
-  "totalBytes": 17960283,
+  "totalBytes": 17960653,
   "files": [
     {
       "path": ".nojekyll",
@@ -167,8 +167,8 @@
     },
     {
       "path": "css/cinema.css",
-      "bytes": 28729,
-      "sha256": "33b78a613efe2ab11d0b21b1f4c9d73873bc29c132e367502a74b5e1e0a0bcd3"
+      "bytes": 29099,
+      "sha256": "5a9c7d5a4172f768f8f1400208d60a766e8b512ef4afddb2480be504656121ea"
     },
     {
       "path": "css/evidence-player.css",
@@ -178,7 +178,7 @@
     {
       "path": "index.html",
       "bytes": 7562,
-      "sha256": "05f67655dd467e2dead843ffdf1e45bc079f43174ce2499a0afbc166c7ca9a2d"
+      "sha256": "ce688ffb19b562d7a6c62b1d2f72f0db206b94f7c82ea4d1665593e077aca8d1"
     },
     {
       "path": "js/cinema-model.js",
@@ -188,7 +188,7 @@
     {
       "path": "js/cinema.js",
       "bytes": 28128,
-      "sha256": "2afc5a648fb95861b4283dcf9e3fed2b603031dd3079a16e02e8bb78d808cac7"
+      "sha256": "baf47c114b488047e52e22ceb59128121a9f77eb63fbe8d4ac28b30e1c0577e9"
     },
     {
       "path": "js/evidence-player.js",
@@ -198,22 +198,22 @@
     {
       "path": "js/markdown.js",
       "bytes": 4698,
-      "sha256": "42988eb5e2c946cddb2cfa9e25239debbcc9cc14d8adf2030b826de130f7cf8a"
+      "sha256": "4ed551ab8e0885341b1742b02296a5a61ff7a187d5aa4bc11588160aa9f86c10"
     },
     {
       "path": "js/math-parser.js",
       "bytes": 642,
-      "sha256": "88a05c077cdcdb5cda0546cd85582ea117cf283fd40be891abcc71e08442396a"
+      "sha256": "1bfb1caf5b3ef3526ea0aae53514f5b754b22348e70b28d32b2abb350be05a5f"
     },
     {
       "path": "js/report-speech.js",
       "bytes": 775,
-      "sha256": "0d79c43f6e9203626bc7725cd4b81fb0b3573d746f4c7d4224493c79e8180189"
+      "sha256": "9ba65069d16bfebd3484a096e6a72ddc93428e4ae21ac09ad671e9acc0dc0de2"
     },
     {
       "path": "js/report-validation.js",
       "bytes": 4949,
-      "sha256": "eda86492c633da2ad4eb403820ad2f7a963b306330fbe05511439499ba73e905"
+      "sha256": "87b59fb363d514496ca36bf7661a4bafc6735d3556956970d417a421c84cb925"
     },
     {
       "path": "js/static-tts-player.js",

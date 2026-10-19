@@ -1,6 +1,6 @@
-import '../vendor/markdown-it/markdown-it.min.js?v=20b28f8f57cc6712';
-import texmath from '../vendor/markdown-it-texmath/texmath.js?v=20b28f8f57cc6712';
-import katex from '../vendor/katex/katex.mjs?v=20b28f8f57cc6712';
+import '../vendor/markdown-it/markdown-it.min.js?v=a19010ccf9e1fa1c';
+import texmath from '../vendor/markdown-it-texmath/texmath.js?v=a19010ccf9e1fa1c';
+import katex from '../vendor/katex/katex.mjs?v=a19010ccf9e1fa1c';
 
 export const mathOptions = {
   throwOnError: true, trust: false, strict: 'ignore',

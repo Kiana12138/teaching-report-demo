@@ -1,6 +1,6 @@
-import { normalizeMath } from "./report-validation.js?v=20b28f8f57cc6712";
-import { createMathParser } from "./math-parser.js?v=20b28f8f57cc6712";
-import katex from "../vendor/katex/katex.mjs?v=20b28f8f57cc6712";
+import { normalizeMath } from "./report-validation.js?v=a19010ccf9e1fa1c";
+import { createMathParser } from "./math-parser.js?v=a19010ccf9e1fa1c";
+import katex from "../vendor/katex/katex.mjs?v=a19010ccf9e1fa1c";
 
 const escape = (s) =>
   String(s).replace(
