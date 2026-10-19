@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "reportSha256": "775cc366e17c106d4af345b31cafffbcb4f9829802dc5fcb883e814cdf1ace13",
+  "model": "seed-tts-2.0",
+  "speaker": "zh_female_tianmeitaozi_uranus_bigtts",
+  "sampleRate": 24000,
+  "format": "mp3",
+  "bitRate": 64000,
+  "speechRate": 0,
+  "loudnessRate": 0,
+  "disableMarkdownFilter": true,
+  "disableEmojiFilter": true,
+  "speechRulesVersion": "20261019-v1",
+  "pages": {
+    "overview": {
+      "durationMs": 55320,
+      "bytes": 442797,
+      "audioSha256": "c359cdca9eb9fdd698fea34c719c18ff520d1647004ca01d6dd9679b260bc287",
+      "audio": "./audio/overview.6ff1b274be5f2f18.mp3",
+      "textSha256": "26a506daeaef4644dcd6744e85daa0d6aa15081a6c87524c6458f0b7a63259d2"
+    },
+    "issue-1-cause": {
+      "durationMs": 47976,
+      "bytes": 384045,
+      "audioSha256": "e07d15b226f3a4f86a1b36b7beafad291c574832342fd9768eaaa454da071811",
+      "audio": "./audio/issue-1-cause.a96f183f23f7797e.mp3",
+      "textSha256": "092e4e11fcc27d244d6bcbab4f03517c34e2da2af201aa7ec3d3fb64edf77def"
+    },
+    "issue-1-suggestion": {
+      "durationMs": 52248,
+      "bytes": 418221,
+      "audioSha256": "472394e058c5bd1b31b8d85548878c076de076c2a3a257eb1afc3701a48c5e62",
+      "audio": "./audio/issue-1-suggestion.ab8988a8ff491709.mp3",
+      "textSha256": "35cc917b6bd250c7ea7a3ecaf45f5c7fb9dafcfbe2903cf38a1a91fdebeb81ba"
+    },
+    "issue-2-cause": {
+      "durationMs": 22896,
+      "bytes": 183405,
+      "audioSha256": "3004d349530f341e6d999b0a0125183e221b18e80bd7913f0cdb53bbcac1d381",
+      "audio": "./audio/issue-2-cause.87e65572e0590fc7.mp3",
+      "textSha256": "9bbbf3b555f87c020c9d9cc1c0996c710ba0dabfcdbcb2316945a83931f3dc10"
+    },
+    "issue-2-suggestion": {
+      "durationMs": 37968,
+      "bytes": 303981,
+      "audioSha256": "201becd8e6de77df44b7638f215f654c32b6789a7f222e3c3cd2f8702af42c63",
+      "audio": "./audio/issue-2-suggestion.1ba015e3122b0dba.mp3",
+      "textSha256": "614d649af3b099f0734602c2a363a5b616979ccd65d983cd481bead90ac11205"
+    },
+    "issue-3-cause": {
+      "durationMs": 47520,
+      "bytes": 380397,
+      "audioSha256": "38c92f09d83fe7f465dc1534863027e75a1767b399b5dfbc1afac70539cd87c5",
+      "audio": "./audio/issue-3-cause.2cdebf80314571b9.mp3",
+      "textSha256": "290aec1802b393246841f9ddc31a9993cbf3d1b397502edacd66a2138e58a9d7"
+    },
+    "issue-3-suggestion": {
+      "durationMs": 68160,
+      "bytes": 545517,
+      "audioSha256": "485ef0ab659e6952ddc205dbdfc2e98aedbcb509cef630db0bb1cc0bbad97e59",
+      "audio": "./audio/issue-3-suggestion.ef03ef318acc2fdd.mp3",
+      "textSha256": "ff250ed705e513f9d1015a682e838fe0f0d88cc3922d7145c42535fc8050b7d0"
+    },
+    "issue-4-cause": {
+      "durationMs": 56160,
+      "bytes": 449517,
+      "audioSha256": "e6ae8e3e6c58625d7a28ec9281ac937643f52a5597272bae0c700886af7d5a98",
+      "audio": "./audio/issue-4-cause.b76eef2d6a842bc7.mp3",
+      "textSha256": "ad97fa147dd29ed121b4f132205c4b6c63830faa2ed96c15e6ab28751f2c2936"
+    },
+    "issue-4-suggestion": {
+      "durationMs": 43992,
+      "bytes": 352173,
+      "audioSha256": "b6ba2e264429af0c809b769f111768e185e1f97e78cab2570504cb4279dbd58f",
+      "audio": "./audio/issue-4-suggestion.f027f67ef7a96b40.mp3",
+      "textSha256": "0cbeaa3bc1296526bdbd6adb11ddbeb4a0997a5097329ef9a5abf0cb671a1dd9"
+    },
+    "issue-5-cause": {
+      "durationMs": 50496,
+      "bytes": 404205,
+      "audioSha256": "00347a94837231955c46df3e450be8ddf98d5633f0a9a59d1b067f75a46cee96",
+      "audio": "./audio/issue-5-cause.5b88c5c2cde9e21d.mp3",
+      "textSha256": "93ecc6a6ae155ec05d90ecac189342d58d7856fc5b52642ec91acbf148d94fee"
+    },
+    "issue-5-suggestion": {
+      "durationMs": 41952,
+      "bytes": 335853,
+      "audioSha256": "a4cbe3858107333da03f28f2a19b48f86500e5afad8ba0c0b1a5367bcbcb7aac",
+      "audio": "./audio/issue-5-suggestion.82bdf144ccd6bd6b.mp3",
+      "textSha256": "4049a8c2a8e725968687e7bb18fbc7287771008c81b400c47652ebb2d59c4929"
+    },
+    "issue-6-cause": {
+      "durationMs": 28080,
+      "bytes": 224877,
+      "audioSha256": "6bb2740153889c9c21604e83bb736f99d1aedd5884ae55b83534dfa0453ac806",
+      "audio": "./audio/issue-6-cause.43c9e8733a012696.mp3",
+      "textSha256": "e43e5b165e27c7b32c4ccbee95fce3e95fd91a708aec712f9fbecb817728c4d0"
+    },
+    "issue-6-suggestion": {
+      "durationMs": 16296,
+      "bytes": 130605,
+      "audioSha256": "2632c862c6e47e61321ae0b07bc5b516c6b681db45ffb7300ac89fc4bc136429",
+      "audio": "./audio/issue-6-suggestion.5c242fe239b8c543.mp3",
+      "textSha256": "321154bd6544c007a2cd776c4b3074b6e3827a4e7b23ae883a324c8c4be0abf9"
+    },
+    "summary": {
+      "durationMs": 34272,
+      "bytes": 274413,
+      "audioSha256": "077139cbbeb3f8d5595d38f5d2ef5f8e2711f5390b94eccd00c3637624bc7fe0",
+      "audio": "./audio/summary.37193cafc9c3e1e6.mp3",
+      "textSha256": "96a465cd3800deb8c32dd5b29fcf66ffcf684db88cbd1ee0a89f0d6e44f2864a"
+    }
+  }
+}

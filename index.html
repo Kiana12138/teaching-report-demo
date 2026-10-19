@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-report-mode="static" data-theme="white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>微格实训智能反馈平台 · 报告</title>
+  <link rel="stylesheet" href="./vendor/katex/katex.min.css?v=20b28f8f57cc6712" />
+  <link rel="stylesheet" href="./css/cinema.css?v=20b28f8f57cc6712" />
+  <link rel="stylesheet" href="./css/evidence-player.css?v=20b28f8f57cc6712">
+</head>
+<body>
+  <script>
+    /* 默认白色；渲染前恢复上次选择，避免主题闪烁。 */
+    try {
+      var t = localStorage.getItem("cinema-theme");
+      if (["light", "warm", "blue", "purple"].indexOf(t) > -1) { t = "white"; }
+      if (["dark", "white"].indexOf(t) > -1) {
+        document.documentElement.setAttribute("data-theme", t);
+      }
+    } catch (e) {}
+  </script>
+  <!-- 顶栏（8%）：摄影机 logo，镜头光束向右射出 -->
+  <header class="topbar">
+    <div class="brand-wrap">
+      <svg class="cam" viewBox="0 0 228 64" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="beamG" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#d9a05b" stop-opacity=".62" />
+            <stop offset=".55" stop-color="#d9a05b" stop-opacity=".18" />
+            <stop offset="1" stop-color="#d9a05b" stop-opacity="0" />
+          </linearGradient>
+          <radialGradient id="lensG" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#f2c684" />
+            <stop offset="1" stop-color="#d9a05b" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+        <!-- 整体左移 26，去掉左侧留白 -->
+        <g transform="translate(-26 0)">
+          <!-- 光束：自镜头向右射出（已缩短） -->
+          <g class="beam">
+            <polygon points="132,31 248,16 248,62 132,49" fill="url(#beamG)" />
+            <polygon points="132,35 248,25 248,53 132,45" fill="url(#beamG)" opacity=".75" />
+          </g>
+          <!-- 镜头光晕 -->
+          <circle cx="131" cy="40" r="10" fill="url(#lensG)" opacity=".85" />
+          <!-- 机身 -->
+          <rect x="36" y="26" width="76" height="32" rx="6" stroke="#d9a05b" stroke-width="2" fill="#15181d" />
+          <!-- 镜头筒 -->
+          <polygon points="112,31 112,49 133,55 133,25" stroke="#d9a05b" stroke-width="2" fill="#1b1f24" stroke-linejoin="round" />
+          <!-- 双卷片轴：外圈 + 三根轮辐整体转动（外圈一并入组，保证绕圆心旋转） -->
+          <g transform="translate(56 15)">
+            <g class="reel-core">
+              <circle cx="0" cy="0" r="12" fill="#15181d" stroke="#d9a05b" stroke-width="2" />
+              <path d="M0-2.6V-10.4M2.3 1.3 9 5.2M-2.3 1.3-9 5.2" stroke="#8f8a7e" stroke-width="1.8" stroke-linecap="round" />
+              <circle cx="0" cy="0" r="2.6" fill="#d9a05b" />
+            </g>
+          </g>
+          <g transform="translate(92 15)">
+            <g class="reel-core" style="animation-duration: 4.2s">
+              <circle cx="0" cy="0" r="12" fill="#15181d" stroke="#d9a05b" stroke-width="2" />
+              <path d="M0-2.6V-10.4M2.3 1.3 9 5.2M-2.3 1.3-9 5.2" stroke="#8f8a7e" stroke-width="1.8" stroke-linecap="round" />
+              <circle cx="0" cy="0" r="2.6" fill="#d9a05b" />
+            </g>
+          </g>
+          <!-- 机身细节 -->
+          <rect x="46" y="34" width="16" height="7" rx="2" stroke="#8f8a7e" stroke-width="1.4" />
+          <path d="M70 34h30M70 40h30M70 46h18" stroke="#3a3f46" stroke-width="2" />
+        </g>
+      </svg>
+      <div>
+        <div class="brand-name"><span class="brand-long">微格实训<em>智能反馈</em>平台</span><span class="brand-short">微格实训</span></div>
+      </div>
+    </div>
+    <div class="top-meta">
+      <!-- 课件选择 -->
+      <div class="ctl" id="srcCtl" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <rect x="1.6" y="2.8" width="12.8" height="10.4" rx="1.6" stroke="currentColor" stroke-width="1.3" />
+          <path d="M1.6 5.9h12.8M4.7 2.8v3.1M8 2.8v3.1M11.3 2.8v3.1" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+        <span class="src-name" id="srcName"></span>
+        <svg class="chev" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.6 5 6.6 8 3.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" /></svg>
+        <div class="ctl-menu" id="srcMenu" role="menu"></div>
+      </div>
+      <!-- 朗读本页 -->
+      <button class="ctl read" id="readBtn" type="button" aria-pressed="false">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8.7 2.4 4.9 5.6H2.3v4.8h2.6l3.8 3.2z" fill="currentColor" />
+          <path class="wave" d="M10.9 5.7a3.3 3.3 0 0 1 0 4.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+          <path class="wave w2" d="M12.8 3.8a6 6 0 0 1 0 8.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+        </svg>
+        <span id="readLabel">朗读本页</span>
+      </button>
+      <!-- 语速 -->
+      <div class="ctl" id="rateCtl" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">
+        <span id="rateVal">1x</span>
+        <svg class="chev" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.6 5 6.6 8 3.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" /></svg>
+        <div class="ctl-menu" id="rateMenu" role="menu"></div>
+      </div>
+      <button class="ctl icon-only" id="themeBtn" type="button" aria-label="切换明暗主题" aria-pressed="false" title="切换明暗主题">
+        <svg class="ico-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.6 9.9A5.9 5.9 0 0 1 6.1 2.4a5.9 5.9 0 1 0 7.5 7.5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" /></svg>
+        <svg class="ico-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3.1" stroke="currentColor" stroke-width="1.3" /><path d="M8 1.4v1.6M8 13v1.6M1.4 8h1.6M13 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M12.6 3.4l-1.1 1.1M4.5 11.5l-1.1-1.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" /></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- 中央舞台（85%，整体即一条大胶片） -->
+  <main class="stage" id="stage">
+    <aside class="sidenav" aria-label="报告导航">
+      <div class="side-cap">报 告 导 航</div>
+      <nav class="side-list scroll" id="sideList"></nav>
+    </aside>
+    <div class="stage-main">
+      <!-- 大胶片上缘齿孔带 -->
+      <div class="film-edge top" aria-hidden="true">
+        <span class="edge-txt">课堂观察 · CLASSROOM OBSERVATION</span>
+        <span class="edge-txt" id="edgeVideo"></span>
+      </div>
+
+      <div class="stage-view" id="stageView"></div>
+
+      <!-- 大胶片下缘齿孔带 -->
+      <div class="film-edge bottom" aria-hidden="true"></div>
+    </div>
+  </main>
+
+  <!-- 底部控制栏（7%） -->
+  <div class="deck" id="stageBar">
+    <span class="slide-label" id="slideLabel"></span>
+    <div class="strip" id="segs"></div>
+    <div class="deck-right">
+      <span class="counter" id="counter"></span>
+      <button class="pbtn" id="prevBtn" type="button" aria-label="上一页">‹</button>
+      <button class="pbtn" id="nextBtn" type="button" aria-label="下一页">›</button>
+    </div>
+  </div>
+  <script type="module" src="./js/cinema.js?v=20b28f8f57cc6712"></script>
+</body>
+</html>

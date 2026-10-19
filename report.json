@@ -1,0 +1,539 @@
+{
+  "asset_schema": 2,
+  "videoName": "内置示例_函数的单调性",
+  "reportPages": [
+    {
+      "part": "1",
+      "label": "概览"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-1-cause",
+      "label": "核心数学知识的表征建构·原因分析"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-1-suggestion",
+      "label": "核心数学知识的表征建构·修改建议"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-2-cause",
+      "label": "板书·原因分析"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-2-suggestion",
+      "label": "板书·修改建议"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-3-cause",
+      "label": "跳水情境·原因分析"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-3-suggestion",
+      "label": "跳水情境·修改建议"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-4-cause",
+      "label": "四个函数情境·原因分析"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-4-suggestion",
+      "label": "四个函数情境·修改建议"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-5-cause",
+      "label": "自主思考空间·原因分析"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-5-suggestion",
+      "label": "自主思考空间·修改建议"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-6-cause",
+      "label": "头部朝向·原因分析"
+    },
+    {
+      "part": "2",
+      "pageId": "issue-6-suggestion",
+      "label": "头部朝向·修改建议"
+    },
+    {
+      "part": "3",
+      "label": "总结"
+    }
+  ],
+  "reportData": {
+    "1": {
+      "route": "overview",
+      "title": "概览",
+      "paneTitle": "本节课教学概览",
+      "staticContent": {
+        "cards": [
+          {
+            "title": "",
+            "text": "本节课围绕\"函数的单调性\"展开，核心目标是引导学生在已有图像直观经验的基础上，理解函数值随自变量增大而增大或减小的变化规律，并进一步过渡到用符号语言精确刻画单调性。\n\n就现有课堂片段看，你是有概念生成意识的。你没有一开始就直接给定义，而是尝试让学生先看情境、再看图像、再碰到反例，这个大方向没有问题。但从结果看，这一节课还不能算一节收束完整、表达规范的数学概念课，因为最该出现的核心数学内容还没有真正立住：**\"区间\"\"任意两点\"\"单调递增/递减定义\"没有被清楚地呈现出来。**\n\n所以，这节课当前最核心的问题，不是导入够不够生动，也不是活动够不够丰富，而是**该有的数学表征还没有完整出现**。"
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "collection",
+        "items": [
+          {
+            "kind": "image",
+            "imageSrc": "/assets/builtin-monotonicity-cover-eeb50c4eaf318d1d.png",
+            "imageAlt": "函数的单调性课题封面",
+            "role": "context",
+            "sourceType": "ppt",
+            "capturedAtMs": 0
+          }
+        ]
+      }
+    },
+    "2": {
+      "route": "problem-analysis",
+      "title": "主要问题与修改建议",
+      "pages": [
+        {
+          "id": "issue-1-cause",
+          "dimension": "核心定义·原因分析",
+          "title": "核心定义缺失原因分析",
+          "paneTitle": "核心数学知识的表征建构",
+          "navCaption": "核心数学知识的表征建构",
+          "issues": [
+            {
+              "id": "definition-q1-cause",
+              "label": "问题1",
+              "title": "这节课最需要先补上的，是函数单调性的规范数学定义，而不是继续丰富前面的活动",
+              "cause": "现在课堂里已经出现了一些接近定义的话，比如\"函数值随着自变量增大而增大\"\"任意取两个时刻\"。但这些都还停留在具体例子和口头描述层面，没有上升为一般函数的规范表达。课堂里也没有明确出现\"单调递增\"\"单调递减\"\"单调区间\"这些本节课必须落地的数学术语，更没有把它们通过板书或 PPT 固定下来。\n\n这意味着学生目前学到的，更像是\"看图说趋势\"，而不是\"掌握单调性的判断标准\"。如果这一点不补上，那么前面无论设计多少情境和活动，本节课的核心任务都还没有完成。",
+              "suggestion": "",
+              "evidence": {
+                "kind": "collection",
+                "items": [
+                  {
+                    "id": "ev_builtin_monotonicity_definition",
+                    "kind": "video",
+                    "videoSrc": "/assets/builtin-monotonicity-definition-node-4cb69b089eb40e52.mp4",
+                    "posterSrc": "/assets/builtin-monotonicity-definition-node-6066404c5daf6072.jpg",
+                    "mediaSha256": "4cb69b089eb40e52d08683ba0af1c8a5e013ee3ee5beb48b84a854695b92a01f",
+                    "startMs": 238000,
+                    "endMs": 254200,
+                    "mediaOffsetMs": 238000,
+                    "snapshotId": "snap_c14bc6c9214e8a0fb85bce61685b6be6760317f7887f6f83c5a30acd97656974",
+                    "sourceRunId": "7facf3c488dd13db330cc2bb3b901aa7",
+                    "sourceVideoId": "0ae2984f58aed7e8fb81f7a94add010c",
+                    "sourceVideoSha256": "6d2b1a0071679791e5cfbf15b9ce16ed5017cc22e16f835bc2416919e19302bf",
+                    "transcriptIds": [
+                      "t0033",
+                      "t0034",
+                      "t0035"
+                    ],
+                    "relatedImageIds": [
+                      "p0007"
+                    ],
+                    "scope": "representative",
+                    "coverage": "仅回看“任意选取两个时间点”及气温大小关系的例子表述，不能证明全程没有一般定义。",
+                    "verification": {
+                      "transcript": "timeline_checked",
+                      "video": "frames_checked",
+                      "audio": "not_relistened"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "indicatorLabel": "原因分析"
+        },
+        {
+          "id": "issue-1-suggestion",
+          "dimension": "核心定义·修改建议",
+          "title": "核心定义缺失修改建议",
+          "paneTitle": "核心数学知识的表征建构",
+          "navCaption": "核心数学知识的表征建构",
+          "issues": [
+            {
+              "id": "definition-q1-suggestion",
+              "label": "问题1",
+              "title": "这节课最需要先补上的，是函数单调性的规范数学定义，而不是继续丰富前面的活动",
+              "cause": "",
+              "suggestion": "- 你要把整节课的收束点提前想清楚：最后一定要落到一般定义，而不是停在例子上。\n- 在学生借助 4–14 时与 4–16 时的对比初步理解\"任意\"之后，立刻抽象成一般表述：先说区间，再说任意两点，再说对应函数值的大小规律。\n- 板书或 PPT 上至少要明确呈现：区间 I、任意 x₁<x₂、f(x₁)<f(x₂) 或 f(x₁)>f(x₂)、单调递增/单调递减。\n- 你下一版课不要把\"定义\"留成课堂尾声的可有可无部分，而要把它当成整节课必须完成的中心任务。",
+              "evidence": {
+                "kind": "collection",
+                "items": [
+                  {
+                    "id": "ev_builtin_monotonicity_definition",
+                    "kind": "video",
+                    "videoSrc": "/assets/builtin-monotonicity-definition-node-4cb69b089eb40e52.mp4",
+                    "posterSrc": "/assets/builtin-monotonicity-definition-node-6066404c5daf6072.jpg",
+                    "mediaSha256": "4cb69b089eb40e52d08683ba0af1c8a5e013ee3ee5beb48b84a854695b92a01f",
+                    "startMs": 238000,
+                    "endMs": 254200,
+                    "mediaOffsetMs": 238000,
+                    "snapshotId": "snap_c14bc6c9214e8a0fb85bce61685b6be6760317f7887f6f83c5a30acd97656974",
+                    "sourceRunId": "7facf3c488dd13db330cc2bb3b901aa7",
+                    "sourceVideoId": "0ae2984f58aed7e8fb81f7a94add010c",
+                    "sourceVideoSha256": "6d2b1a0071679791e5cfbf15b9ce16ed5017cc22e16f835bc2416919e19302bf",
+                    "transcriptIds": [
+                      "t0033",
+                      "t0034",
+                      "t0035"
+                    ],
+                    "relatedImageIds": [
+                      "p0007"
+                    ],
+                    "scope": "representative",
+                    "coverage": "仅回看“任意选取两个时间点”及气温大小关系的例子表述，不能证明全程没有一般定义。",
+                    "verification": {
+                      "transcript": "timeline_checked",
+                      "video": "frames_checked",
+                      "audio": "not_relistened"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "indicatorLabel": "修改建议"
+        },
+        {
+          "id": "issue-2-cause",
+          "dimension": "板书",
+          "indicatorLabel": "原因分析",
+          "title": "板书问题原因分析",
+          "paneTitle": "板书",
+          "navCaption": "板书",
+          "issues": [
+            {
+              "id": "blackboard-q1-cause",
+              "label": "问题2",
+              "title": "教师没有使用黑板进行讲授，缺少板书支撑",
+              "cause": "本节课中，你没有使用黑板进行讲授，黑板上没有书写任何内容。函数单调性定义中的“区间”“任意两点”和“函数值关系”等关键条件，没有通过板书固定下来，不利于学生持续对照这些条件、形成清晰的概念框架。",
+              "suggestion": "",
+              "evidence": {
+                "hideHeader": true,
+                "chip": "当前显示：问题2 原因分析",
+                "caption": "板书问题原因分析",
+                "imageSrc": "/assets/blackboard-analysis-bc77441abfe428e9.png",
+                "imageAlt": "板书分析截图"
+              }
+            }
+          ]
+        },
+        {
+          "id": "issue-2-suggestion",
+          "dimension": "板书",
+          "indicatorLabel": "修改建议",
+          "title": "板书问题修改建议",
+          "paneTitle": "板书",
+          "navCaption": "板书",
+          "issues": [
+            {
+              "id": "blackboard-q1-suggestion",
+              "label": "问题2",
+              "title": "板书要围绕'区间、任意两点、函数值关系'形成清晰的概念结构",
+              "cause": "",
+              "suggestion": "在引导学生完成\"任意两点\"辨析后，应暂停活动推进，用板书、电子白板或固定 PPT 页面集中呈现单调递增的规范定义，并突出\"区间内\"\"任意\"\"x_1<x_2\"\"f(x_1)<f(x_2)\"四个关键条件。后续分析单调递减时，可在同一页面采用对照结构呈现，形成可持续回看的概念框架。",
+              "evidence": {
+                "hideHeader": true,
+                "chip": "当前显示：问题2 修改建议",
+                "caption": "板书问题修改建议",
+                "imageSrc": "/assets/blackboard-analysis-bc77441abfe428e9.png",
+                "imageAlt": "板书分析截图"
+              }
+            }
+          ]
+        },
+        {
+          "id": "issue-3-cause",
+          "dimension": "跳水情境",
+          "indicatorLabel": "原因分析",
+          "title": "跳水导入问题原因分析",
+          "paneTitle": "跳水情境",
+          "navCaption": "跳水情境",
+          "issues": [
+            {
+              "id": "diving-q1-cause",
+              "label": "问题3",
+              "title": "跳水视频不适合继续做这节课的主导入，你要先裁决\"替换\"还是\"弱化\"",
+              "cause": "跳水视频的问题，不在于它有没有趣，而在于它和\"函数单调性\"的核心数学结构不匹配。单调性强调的是**区间性**和**任意性**，而跳水情境天然更容易把学生带到\"整体先升后降\"的印象上。学生容易记住\"这个图像往上、那个图像往下\"，却不容易自然进入\"在哪个区间上\"\"任意取两点是否都成立\"这样的数学判断。\n\n除此之外，这个情境还额外带进了物理模型、重心、轨迹、时间过短等无关负担。这样一来，学生还没进入单调性的定义核心，就先花力气处理情境翻译了。",
+              "suggestion": "",
+              "evidence": {
+                "hideHeader": true,
+                "chip": "当前显示：问题3 原因分析",
+                "caption": "跳水视频情境导入课上PPT截图",
+                "imageSrc": "/assets/diving-d590adbb6549515c.png",
+                "imageAlt": "跳水视频情境导入课上PPT截图",
+                "sourceType": "ppt",
+                "capturedAtMs": 28000
+              }
+            }
+          ]
+        },
+        {
+          "id": "issue-3-suggestion",
+          "dimension": "跳水情境",
+          "indicatorLabel": "修改建议",
+          "title": "跳水导入问题修改建议",
+          "paneTitle": "跳水情境",
+          "navCaption": "跳水情境",
+          "issues": [
+            {
+              "id": "diving-q1-suggestion",
+              "label": "问题3",
+              "title": "跳水视频不适合继续做这节课的主导入，你要先裁决\"替换\"还是\"弱化\"",
+              "cause": "",
+              "suggestion": "**主建议：替换跳水视频导入。**\n\n你可以直接改用更贴近单调性结构的材料，比如：\n\n- 同一坐标系中的两条一次函数图像；\n- 气温随时间变化的上升区间；\n- 油量随时间减少的过程；\n- 任何能够直接支持\"区间 + 任意两点\"判断的函数情境。\n\n这样学生一开始接触的就是数学对象本身，进入核心问题会更快。\n\n**备选方案：如果你坚持保留跳水情境。**\n\n那它就只能作为一个很短的兴趣唤起材料，不能再承担概念建立的主任务。此时你要同步做到：\n\n- 删除\"完美拟合抛物线\"\"物理老师告诉我函数关系\"这类内容；\n- 明确区分\"空间运动轨迹\"和\"时间—高度函数图像\"；\n- 看完后立刻切到真正用于建立定义的数学例子上，不能在跳水情境里停留太久。\n\n也就是说，**要么替换，要么弱化，但不要一边说不合适，一边继续把它当主例子细修。**",
+              "evidence": {
+                "hideHeader": true,
+                "chip": "当前显示：问题3 修改建议",
+                "caption": "跳水情境修改建议对应截图",
+                "imageSrc": "/assets/diving2-e4d53de2a10a1c07.png",
+                "imageAlt": "跳水情境修改建议对应截图",
+                "sourceType": "ppt",
+                "capturedAtMs": 58000
+              }
+            }
+          ]
+        },
+        {
+          "id": "issue-4-cause",
+          "dimension": "四个函数情境·原因分析",
+          "title": "四个函数情境的数学任务未讲清原因分析",
+          "paneTitle": "四个函数情境",
+          "navCaption": "四个函数情境",
+          "issues": [
+            {
+              "id": "materials-q1-cause",
+              "label": "问题4",
+              "title": "四个函数情境各自承担的数学任务还没有被讲清楚",
+              "cause": "这节课里最有价值的两组材料，其实不是跳水视频，而是：\n\n- y=x²、y=1/x 这类不能整体笼统谈单调的函数；\n- 4–14 时与 4–16 时的对比。\n\n前一组材料，本来应该帮助学生发现：**讨论单调性时，不能离开区间。** 后一组材料，本来应该帮助学生发现：**判断单调性时，不能只找到一对满足条件的点，而要看任意两点。**\n\n但从现有课堂看，这两组材料虽然都出现了，却没有被你明确组织成这条概念推进链。再加上\"抛物线完美拟合\"这类表达本身又不够科学，学生就更容易在多个层面上同时混淆：到底是在看趋势、看轨迹，还是在学定义。",
+              "suggestion": "",
+              "evidence": {
+                "hideHeader": true,
+                "chip": "当前显示：问题4 原因分析",
+                "caption": "两组材料对应课上PPT截图",
+                "imageSrc": "/assets/materials-582b585afa5a8674.png",
+                "imageAlt": "两组材料课上PPT截图",
+                "sourceType": "ppt",
+                "capturedAtMs": 170000
+              }
+            }
+          ],
+          "indicatorLabel": "原因分析"
+        },
+        {
+          "id": "issue-4-suggestion",
+          "dimension": "四个函数情境·修改建议",
+          "title": "四个函数情境的数学任务未讲清修改建议",
+          "paneTitle": "四个函数情境",
+          "navCaption": "四个函数情境",
+          "issues": [
+            {
+              "id": "materials-q1-suggestion",
+              "label": "问题4",
+              "title": "四个函数情境各自承担的数学任务还没有被讲清楚",
+              "cause": "",
+              "suggestion": "- 用 y=x²、y=1/x 明确服务\"区间\"这一概念，不要只让学生画完图就结束。\n- 用 4–14 时与 4–16 时的对比，明确服务\"任意\"这一概念，不要在一个例子里来回切换区间又不说清差别。\n- 关于跳水材料，如果保留，只能说\"大致呈现先升后降趋势\"，不要再用\"完美拟合\"这样的绝对化表述。\n- 你在课堂上要主动告诉学生：**这一步我们是在解决'区间'问题，下一步我们是在解决'任意'问题。** 只有这样，活动才不是并列堆放，而是在共同生成定义。",
+              "evidence": {
+                "hideHeader": true,
+                "chip": "当前显示：问题4 修改建议",
+                "caption": "两组材料对应课上PPT截图",
+                "imageSrc": "/assets/materials-582b585afa5a8674.png",
+                "imageAlt": "两组材料课上PPT截图",
+                "sourceType": "ppt",
+                "capturedAtMs": 170000
+              }
+            }
+          ],
+          "indicatorLabel": "修改建议"
+        },
+        {
+          "id": "issue-5-cause",
+          "dimension": "自主思考空间·原因分析",
+          "title": "自主思考空间不足原因分析",
+          "paneTitle": "自主思考空间",
+          "navCaption": "自主思考空间",
+          "issues": [
+            {
+              "id": "questioning-q1-cause",
+              "label": "问题5",
+              "title": "关键节点上，学生思考和表达的空间不足，没有真正经历\"为什么\"",
+              "cause": "这节课还有一个很明显的问题：学生其实已经多次接近关键结论了，但你在最重要的地方收得太快。\n\n比如学生说出\"函数值随着自变量增大而增大\"之后，你马上肯定并推进；学生说\"4–16 不能说明始终上升\"之后，你也很快接着解释。这样做的结果是：学生好像答对了，但没有真正说出**依据是什么、反例在哪里、标准是什么**。\n\n而单调性这节课，真正该让学生经历的，恰恰就是这三件事。尤其在\"存在一对点满足\"和\"任意两点都满足\"的分界处，如果教师替学生把理由补完，学生就很难真正形成判断标准。",
+              "suggestion": "",
+              "evidence": {
+                "kind": "collection",
+                "items": [
+                  {
+                    "id": "ev_builtin_monotonicity_questioning",
+                    "kind": "video",
+                    "videoSrc": "/assets/builtin-monotonicity-questioning-node-ece4de1e58d3d383.mp4",
+                    "posterSrc": "/assets/builtin-monotonicity-questioning-node-3f9787d344d017a2.jpg",
+                    "mediaSha256": "ece4de1e58d3d3836362e65de2980594efe9cc739d206c9bb7d9f8d4cae9aed6",
+                    "startMs": 89000,
+                    "endMs": 108300,
+                    "mediaOffsetMs": 89000,
+                    "snapshotId": "snap_c14bc6c9214e8a0fb85bce61685b6be6760317f7887f6f83c5a30acd97656974",
+                    "sourceRunId": "7facf3c488dd13db330cc2bb3b901aa7",
+                    "sourceVideoId": "0ae2984f58aed7e8fb81f7a94add010c",
+                    "sourceVideoSha256": "6d2b1a0071679791e5cfbf15b9ce16ed5017cc22e16f835bc2416919e19302bf",
+                    "transcriptIds": [
+                      "t0013",
+                      "t0014",
+                      "t0015",
+                      "t0016"
+                    ],
+                    "relatedImageIds": [
+                      "p0003"
+                    ],
+                    "scope": "local",
+                    "coverage": "仅保留回答、立即肯定和开始推进的连续过程；回看是否追问判断依据。",
+                    "verification": {
+                      "transcript": "timeline_checked",
+                      "video": "frames_checked",
+                      "audio": "not_relistened"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "indicatorLabel": "原因分析"
+        },
+        {
+          "id": "issue-5-suggestion",
+          "dimension": "自主思考空间·修改建议",
+          "title": "自主思考空间不足修改建议",
+          "paneTitle": "自主思考空间",
+          "navCaption": "自主思考空间",
+          "issues": [
+            {
+              "id": "questioning-q1-suggestion",
+              "label": "问题5",
+              "title": "关键节点上，学生思考和表达的空间不足，没有真正经历\"为什么\"",
+              "cause": "",
+              "suggestion": "- 当学生说\"函数值随着自变量增大而增大\"时，不要立刻推进，先追问：**\"你是根据图像的什么特征这样判断的？\"**\n- 当学生说\"4–16 不能\"时，不要立刻解释，先追问：**\"为什么不能？你能指出哪一段、哪两个点构成反例吗？\"**\n- 当学生已经给出局部答案时，再加一步：**\"那谁能用自己的话把这个判断标准说完整？\"**\n\n你下一版课只要把这几个追问做实，学生经历的就不再是\"听你完成推理\"，而会变成\"自己生成判断标准\"。",
+              "evidence": {
+                "kind": "collection",
+                "items": [
+                  {
+                    "id": "ev_builtin_monotonicity_questioning",
+                    "kind": "video",
+                    "videoSrc": "/assets/builtin-monotonicity-questioning-node-ece4de1e58d3d383.mp4",
+                    "posterSrc": "/assets/builtin-monotonicity-questioning-node-3f9787d344d017a2.jpg",
+                    "mediaSha256": "ece4de1e58d3d3836362e65de2980594efe9cc739d206c9bb7d9f8d4cae9aed6",
+                    "startMs": 89000,
+                    "endMs": 108300,
+                    "mediaOffsetMs": 89000,
+                    "snapshotId": "snap_c14bc6c9214e8a0fb85bce61685b6be6760317f7887f6f83c5a30acd97656974",
+                    "sourceRunId": "7facf3c488dd13db330cc2bb3b901aa7",
+                    "sourceVideoId": "0ae2984f58aed7e8fb81f7a94add010c",
+                    "sourceVideoSha256": "6d2b1a0071679791e5cfbf15b9ce16ed5017cc22e16f835bc2416919e19302bf",
+                    "transcriptIds": [
+                      "t0013",
+                      "t0014",
+                      "t0015",
+                      "t0016"
+                    ],
+                    "relatedImageIds": [
+                      "p0003"
+                    ],
+                    "scope": "local",
+                    "coverage": "仅保留回答、立即肯定和开始推进的连续过程；回看是否追问判断依据。",
+                    "verification": {
+                      "transcript": "timeline_checked",
+                      "video": "frames_checked",
+                      "audio": "not_relistened"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "indicatorLabel": "修改建议"
+        },
+        {
+          "id": "issue-6-cause",
+          "dimension": "头部朝向·原因分析",
+          "indicatorLabel": "原因分析",
+          "title": "头部朝向原因分析",
+          "paneTitle": "头部朝向",
+          "navCaption": "头部朝向",
+          "issues": [
+            {
+              "id": "issue-6-cause",
+              "label": "问题6",
+              "title": "视线关注点不均衡",
+              "cause": "你的视线关注主要集中在教室中部，尤其是前排中间学生及其后方区域，说明其在讲解过程中能够形成较为明确的主要关注点。但整体关注范围仍不够均衡，左右两侧学生虽然被覆盖，关注强度明显低于中间区域，后排边缘学生也较少进入稳定视野。这表明你尚未形成持续、系统的全班巡视。",
+              "suggestion": "",
+              "evidence": {
+                "kind": "head_orientation",
+                "motion": {
+                  "imageSrc": "/assets/head-orientation-left-demo-a2deafe17a547d72.webp",
+                  "imageAlt": "头部朝向动态"
+                },
+                "distribution": {
+                  "imageSrc": "/assets/head-orientation-right-a9d78bfdcdf5053b.jpg",
+                  "imageAlt": "关注分布热力图"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "issue-6-suggestion",
+          "dimension": "头部朝向·修改建议",
+          "indicatorLabel": "修改建议",
+          "title": "头部朝向修改建议",
+          "paneTitle": "头部朝向",
+          "navCaption": "头部朝向",
+          "issues": [
+            {
+              "id": "issue-6-suggestion",
+              "label": "问题6",
+              "title": "视线关注点不均衡",
+              "cause": "",
+              "suggestion": "在提问、等待学生思考和学生回答时，有意识全班巡视，并适当延长对边缘学生的注视时间，扩大课堂关注面，减少学生因位置不同而产生的参与机会差异。",
+              "evidence": {
+                "kind": "head_orientation",
+                "motion": {
+                  "imageSrc": "/assets/head-orientation-left-demo-a2deafe17a547d72.webp",
+                  "imageAlt": "头部朝向动态"
+                },
+                "distribution": {
+                  "imageSrc": "/assets/head-orientation-right-a9d78bfdcdf5053b.jpg",
+                  "imageAlt": "关注分布热力图"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "route": "summary",
+      "title": "总结",
+      "paneTitle": "总结",
+      "staticContent": {
+        "cards": [
+          {
+            "title": "",
+            "text": "这节课最需要先改的，不是某一页 PPT，不是某一句任务指令，而是**把函数单调性的核心定义真正立住**。你要让学生清楚看到：单调性不是泛泛地说\"图像在上升\"，而是要在某个区间内，对任意两点都满足稳定的大小规律。\n\n下一版课的总体修改方向应该是：**压缩或替换绕远的导入，把中段活动明确收束到\"区间\"和\"任意\"两个核心概念上，最后用规范定义完成落点。**"
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "blank"
+      }
+    }
+  },
+  "version": "static-606381e7e0a68b72"
+}
